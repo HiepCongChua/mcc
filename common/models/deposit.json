@@ -1,0 +1,95 @@
+{
+    "name": "Deposit",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "deposit"
+        }
+    },
+    "http": {
+        "path": "deposit"
+    },
+    "properties": {
+        "userId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "user_id"
+            }
+        },
+        "coinSymbol": {
+            "type": "string",
+            "mysql": {
+                "columnName": "coin_symbol"
+            }
+        },
+        "address": {
+            "type": "string",
+            "mysql": {
+                "columnName": "address"
+            }
+        },
+        "txId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "tx_id"
+            }
+        },
+        "amount": {
+            "type": "number",
+            "mysql": {
+                "columnName": "amount"
+            }
+        },
+        "status": {
+            "type": "number",
+            "mysql": {
+                "columnName": "status"
+            }
+        },
+        "confirm": {
+            "type": "string",
+            "mysql": {
+                "columnName": "confirm"
+            }
+        },
+        "confirmation": {
+            "type": "number",
+            "mysql": {
+                "columnName": "confirmation"
+            }
+        },
+        "depositId": {
+            "type": "number",
+            "mysql": {
+                "columnName": "deposit_id"
+            }
+        },
+        "isNewDeposit": {
+            "type": "number",
+            "mysql": {
+                "columnName": "is_new_deposit"
+            }
+        },
+        "generalId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "general_id"
+            }
+        },
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    },
+    "indexes": {}
+}

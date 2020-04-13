@@ -1,0 +1,57 @@
+{
+    "name": "Balance",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true,
+      "mysql": {
+      "table": "balance"
+    }
+    },
+    "http": {
+      "path": "balance"
+    },
+    "properties": {
+      "userId": {
+        "type": "string",
+        "required": true,
+        "mysql": {
+          "columnName": "user_id"
+        }
+      },
+      "totalBalance": {
+        "type": "number",
+        "default": 0,
+        "mysql": {
+          "columnName": "total_balance"
+        }
+      },
+      "availableBalance": {
+        "type": "number",
+        "default": 0,
+        "mysql": {
+          "columnName": "available_balance"
+        }
+      },
+      "lockedBalance": {
+        "type": "number",
+        "default": 0,
+        "mysql": {
+          "columnName": "locked_balance"
+        }
+      },
+      "createdAt": {
+        "type": "number",
+        "mysql": {
+          "columnName": "created_at"
+        }
+      },
+      "updatedAt": {
+        "type": "number",
+        "mysql": {
+          "columnName": "updated_at"
+        }
+      }
+    }
+  }
+  

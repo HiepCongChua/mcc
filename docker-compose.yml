@@ -1,0 +1,41 @@
+#
+# Source code address
+# https://hub.docker.com/u/cuongtransc/
+#
+# Syntax: https://docs.docker.com/compose/compose-file/
+#
+
+version: "2"
+
+services:
+    vinex-daemon:
+        image: 331172499263.dkr.ecr.us-east-1.amazonaws.com/vinex-daemon:b741
+            #depends_on:
+            #- memsql
+            # environment:
+            #     - NODE_ENV=production
+            #ports:
+            #- "3018:3018"
+        #networks:
+        #- comp_default
+        hostname: daemon
+        domainname: vinex.xyz
+        cpu_shares: 1024
+        mem_limit: 2G
+        # privileged: true
+        # restart: always           # other choice: on-failure:3
+        # stdin_open: true
+        # tty: true
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "3"
+
+        #networks:
+        #comp_default:
+        #external: true
+
+# volumes:
+#     db-data:
+

@@ -1,0 +1,12 @@
+{
+    "mysqlDS": {
+        "host": "localhost",
+        "port": 3306,
+        "url": "",
+        "user": "mc",
+        "database": "mcc-portal",
+        "password": "22jMUELnnzRkZTta",
+        "name": "mysqlDS",
+        "connector": "mysql"
+    }
+}

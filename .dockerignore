@@ -1,0 +1,28 @@
+.dockerignore
+.git
+.gitignore
+0compose/
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Cache
+.cache/
+node_modules/
+dist/
+#tmp/       # Store temporary files for Docker build
+tmp/*.js
+
+# Unnecessary data
+docs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+fabfile.py
+

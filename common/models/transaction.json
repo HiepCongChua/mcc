@@ -1,0 +1,69 @@
+{
+    "name": "Transaction",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "transaction"
+        }
+    },
+    "http": {
+        "path": "transaction"
+    },
+    "properties": {
+        "txId": {
+            "type": "string",
+            "required": true,
+            "primaryKey": true,
+            "allowNull": false,
+            "unique": true,
+            "mysql": {
+                "columnName": "tx_id"
+            }
+        },
+        "type": {
+            "type": "string",
+            "mysql": {
+                "columnName": "type"
+            }
+        },
+        "userId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "user_id"
+            }
+        },
+        "state": {
+            "type": "number",
+            "mysql": {
+                "columnName": "state"
+            }
+        },
+        "data": {
+            "type": "object",
+            "mysql": {
+                "columnName": "data"
+            }
+        },
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    },
+    "indexes": {
+        "tx_id": {
+            "keys": {
+                "tx_id": 1
+            }
+        }
+    }
+}

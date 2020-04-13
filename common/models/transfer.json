@@ -1,0 +1,73 @@
+{
+    "name": "Transfer",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "transfer"
+        }
+    },
+    "http": {
+        "path": "transfer"
+    },
+    "properties": {
+        "id": {
+            "type": "number",
+            "dataType": "bigint",
+            "id": true,
+            "generated": true,
+            "default": null,
+            "mysql": {
+                "dataType": "bigint"
+            }
+        },
+        "typeAccount": {
+            "type": "string",
+            "required": true,
+            "mysql": {
+                "columnName": "type_account"
+            }
+        },
+        "typeTransfer": {
+            "type": "string",
+            "required": true,
+            "mysql": {
+                "columnName": "type_transfer"
+            }
+        },
+        "gameId": {
+            "type": "string",
+            "required": true,   
+            "mysql": {
+                "columnName": "game_id"
+            }
+        },
+        "uuid": {
+            "type": "string",
+            "required": true,   
+            "mysql": {
+                "columnName": "uuid"
+            }
+        },
+        "amount": {
+			"type": "number",
+			"dataType": "double",
+			"required": true,
+			"precision": 20,
+			"scale": 8
+		},
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    }
+}

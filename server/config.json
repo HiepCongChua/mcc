@@ -1,0 +1,36 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 8001,
+  "remoting": {
+    "context": false,
+    "rest": {
+      "handleErrors": false,
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false,
+    "errorHandler": {
+      "disableStackTrace": true
+    }
+  },
+  "legacyExplorer": false,
+  "URL_INSIGHT": "https://dev-insight.vinex.network",
+  "INSIGHT_KEY": "1234560sUAAAAADzDVQMwKPE6QSRQtr4WPTKrSP6f",
+  "URL_DAEMON_FOUNDER": "http://daemon.coindex.fun",
+  "DAEMON_FOUNDER_KEY": "key-fa8fcfc823ecf0ab76ee65d869becab6",
+  "EMAIL_FROM": "Vinex System <system@vinex.network>",
+  "ADMIN_EMAIL": "admin@vinex.network",
+  "DISCORD_WEBHOOK_BLOCKCHAIN": "https://discordapp.com/api/webhooks/522089936283893760/EAOK5ro5CSyjeCZJVpb3ic5BlJ3sBYARKmgURub-ags_5EVZ7Q7GwGuV9gG-seZWYwdp",
+  "DISCORD_WEBHOOK_WALLET_DEPOSIT": "https://discordapp.com/api/webhooks/522089936283893760/EAOK5ro5CSyjeCZJVpb3ic5BlJ3sBYARKmgURub-ags_5EVZ7Q7GwGuV9gG-seZWYwdp",
+  "DISCORD_WEBHOOK_FOUNDER": "https://discordapp.com/api/webhooks/522128897446379550/80GDsXSQBJ8PeqeZPaHLad5mx0_SQhaVSl4MsyuuVAyDVf0xezldQ8SlHTfpoeSwajha",
+  "SECRET_KEY_JWT":"mcc-key"
+}

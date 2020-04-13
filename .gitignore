@@ -1,0 +1,47 @@
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+*.swo
+*.swp
+*.tgz
+*.xml
+.DS_Store
+.idea
+.project
+.strong-pm
+coverage
+node_modules
+npm-debug.log
+
+# Ignore Python byte code
+*.py[cod]
+
+# Ignore files for local dev
+docker-compose.override.yml
+
+shell.sh
+logs.sh
+
+# Ignore IDE
+.vscode/
+
+# Ignore dev tmp
+tmp/
+
+# Ignore tmp files for Docker
+package.docker.json
+package-lock.docker.json
+package-lock.json
+
+# Ignore for local dev
+start_dev.sh
+start_prod.sh
+
+#ignore local configuration
+server/config.local.json
+server/datasources.local.json

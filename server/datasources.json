@@ -1,0 +1,51 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "mysqlDS": {
+        "host": "35.226.94.62",
+        "port": 3306,
+        "url": "",
+        "user": "mc",
+        "database": "mcc-portal",
+        "password": "22jMUELnnzRkZTta",
+        "name": "mysqlDS",
+        "connector": "mysql"
+    },
+    "Gmail": {
+        "name": "Gmail",
+        "connector": "mail",
+        "transports": [
+            {
+                "type": "SMTP",
+                "host": "smtp.gmail.com",
+                "secure": false,
+                "port": 587,
+                "auth": {
+                    "user": "vinexsystem@gmail.com",
+                    "pass": "fake_password"
+                }
+            }
+        ]
+    },
+    "SesMail": {
+        "name": "SesMail",
+        "connector": "mail",
+        "transports": [
+            {
+                "type": "smtp",
+                "host": "email-smtp.us-east-1.amazonaws.com",
+                "secure": false,
+                "port": 2587,
+                "tls": {
+                    "rejectUnauthorized": false
+                },
+                "auth": {
+                    "user": "AKIAIFL3CYPEDG4O2SMQ",
+                    "pass": "Ao5wQMZ+Vf3u0GDceysLHMAb9aW6GOnNygxh9Qnw0a9Y"
+                }
+            }
+        ]
+    }
+}

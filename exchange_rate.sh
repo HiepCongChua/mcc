@@ -1,0 +1,1 @@
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'http://localhost:8001/api/exchange-rate/update-binance-rate'

@@ -1,0 +1,10 @@
+server=1
+daemon=1
+whitelist=127.0.0.1
+rpcallowip=127.0.0.1
+rpcuser=vinexuser
+rpcpassword=vinexpass
+txindex=1
+debug=1
+testnet=1
+blocknotify=~/.zcoin/blocknotify.sh XZCT 10

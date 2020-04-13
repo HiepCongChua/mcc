@@ -1,0 +1,83 @@
+{
+    "name": "Withdraw",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "withdraw_request"
+        }
+    },
+    "http": {
+        "path": "withdraw"
+    },
+    "properties": {
+        "withdrawId": {
+            "type": "number",
+            "required": true,
+            "mysql": {
+                "columnName": "withdraw_id"
+            }
+        },
+        "coinSymbol": {
+            "type": "string",
+            "required": true,
+            "mysql": {
+                "columnName": "coin_symbol"
+            }
+        },
+        "address": {
+            "type": "string",
+            "required": true
+        },
+        "originalAmount": {
+            "type": "number",
+            "mysql": {
+                "columnName": "original_amount"
+            }
+        },
+        "amount": {
+            "type": "number"
+        },
+        "status": {
+            "type": "number"
+        },
+        "generalId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "general_id"
+            }
+        },
+        "userId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "user_id"
+            }
+        },
+        "isAnnounced": {
+            "type": "number",
+            "default": 0,
+            "mysql": {
+                "columnName": "is_announced"
+            }
+        },
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    },
+    "indexes": {
+        "UNIQUE_INDEX": {
+            "columns": "`withdraw_id`",
+            "kind": "unique"
+        }
+    }
+}

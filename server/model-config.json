@@ -1,0 +1,84 @@
+{
+    "_meta": {
+        "sources": [
+            "loopback/common/models",
+            "loopback/common/mail",
+            "loopback/common/test",
+            "loopback/server/models",
+            "loopback/server/utility",
+            "loopback/server/blockchain-watcher",
+            "../common/models",
+            "../common/test",
+            "../common/daemon",
+            "../common/mail",
+            "../common/utility",
+            "../common/blockchain-watcher",
+            "./models"
+        ],
+        "mixins": [
+            "loopback/common/mixins",
+            "loopback/server/mixins",
+            "../common/mixins",
+            "./mixins"
+        ]
+    },
+    "Account": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "Withdraw": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "Blockchain": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "SesMailModel": {
+        "dataSource": "SesMail",
+        "public": true
+    },
+    "MailEndPoint": {
+        "dataSource": null,
+        "public": true
+    },
+    "Deposit": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "Exchange": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "ExchangeRate": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "Transaction": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "Transfer": {
+        "dataSource": "mysqlDS",
+        "public": true,
+        "options": {
+            "remoting": {
+              "sharedMethods": {
+                "*": false,
+                "createRequest":true
+              }
+            }
+          }
+    },
+    "Balance": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "WithdrawFee": {
+        "dataSource": "mysqlDS",
+        "public": true
+    },
+    "Auth": {
+        "dataSource": null
+    }
+}

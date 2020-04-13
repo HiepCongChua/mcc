@@ -1,0 +1,65 @@
+{
+    "name": "ExchangeRate",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "exchange_rate"
+        }
+    },
+    "http": {
+        "path": "exchange-rate"
+    },
+    "properties": {
+        "source": {
+            "type": "string",
+            "mysql": {
+                "columnName": "source"
+            }
+        },
+        "target": {
+            "type": "string",
+            "mysql": {
+                "columnName": "target"
+            }
+        },
+        "buyRate": {
+            "type": "number",
+            "mysql": {
+                "columnName": "buy_rate"
+            }
+        },
+        "sellRate": {
+            "type": "number",
+            "mysql": {
+                "columnName": "sell_rate"
+            }
+        },
+        "buyFee": {
+            "type": "number",
+            "mysql": {
+                "columnName": "buy_fee"
+            }
+        },
+        "sellFee": {
+            "type": "number",
+            "mysql": {
+                "columnName": "sell_fee"
+            }
+        },
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    },
+    "indexes": {}
+}

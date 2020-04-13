@@ -1,0 +1,10 @@
+{
+    "URL_INSIGHT": "http://dev-insight.vinex.network",
+    "INSIGHT_KEY": "6Ldfo0sUAAAAADzDVQMwKPdsdsRQtr4WPTKrSP6f",
+    "URL_DAEMON_FOUNDER": "http://daemon.coindex.fun",
+    "DAEMON_FOUNDER_KEY": "key-fa8fcfc823ecf0ab76ee65d869becab6",
+    "EMAIL_FROM": "Vinex System <system@vinex.network>",
+    "ADMIN_EMAIL": "cuongth@midasprotocol.com",
+    "SEND_TRANSACTION_TO_FOUNDER_DELAY": 10,
+    "SEND_WITHDRAW_TO_FOUNDER_DELAY": 12
+}

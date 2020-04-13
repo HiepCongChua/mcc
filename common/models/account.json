@@ -1,0 +1,53 @@
+{
+    "name": "Account",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "account"
+        }
+    },
+    "http": {
+        "path": "account"
+    },
+    "properties": {
+        "userId": {
+            "type": "string",
+            "length": 100,
+            "required": true,
+            "defaultFn": "uuidv4",
+            "mysql": {
+                "columnName": "user_id"
+            }
+        },
+        "address": {
+            "type": "string",
+            "required": true
+        },
+        "accessToken": {
+            "type": "string",
+            "mysql": {
+                "columnName": "access_token"
+            }
+        },
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    },
+    "indexes": {
+        "UNIQUE_INDEX": {
+            "columns": "`address`",
+            "kind": "unique"
+        }
+    }
+}

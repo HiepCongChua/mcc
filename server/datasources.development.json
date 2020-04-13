@@ -1,0 +1,12 @@
+{
+    "mysqlDS": {
+        "host": "35.226.94.62",
+        "port": 3306,
+        "url": "",
+        "database": "db",
+        "password": "22jMUELnnzRkZTta",
+        "name": "mysqlDS",
+        "user": "mc-portal",
+        "connector": "mysql"
+    }
+}

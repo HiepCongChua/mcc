@@ -1,0 +1,85 @@
+{
+    "name": "Blockchain",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "blockchain"
+        }
+    },
+    "properties": {
+        "coinSymbol": {
+            "type": "string",
+            "required": true,
+            "primaryKey": true,
+            "allowNull": false,
+            "mysql": {
+                "columnName": "coin_symbol"
+            }
+        },
+        "blockchainId": {
+            "type": "string",
+            "required": true,
+            "allowNull": false,
+            "mysql": {
+                "columnName": "blockchain_id"
+            }
+        },
+        "addressBlockchainId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "address_blockchain_id"
+            }
+        },
+        "name": {
+            "type": "string",
+            "unique": true
+        },
+        "config": {
+            "type": "object"
+        },
+        "rpcConfig": {
+            "type": "object",
+            "mysql": {
+                "columnName": "rpc_config"
+            }
+        },
+        "fee": {
+            "type": "object"
+        },
+        "handler": {
+            "type": "string"
+        },
+        "isBlockchain": {
+            "type": "number",
+            "mysql": {
+                "columnName": "is_blockchain"
+            }
+        },
+        "type": {
+            "type": "string"
+        },
+        "confirmType": {
+            "type": "string",
+            "mysql": {
+                "columnName": "confirm_type"
+            }
+        },
+        "sync": {
+            "type": "string"
+        },
+        "status": {
+            "type": "number"
+        },
+        "mode": {
+            "type": "string"
+        }
+    },
+    "indexes": {
+        "UNIQUE_INDEX": {
+            "columns": "`blockchain_id`,`coin_symbol`",
+            "kind": "unique"
+        }
+    }
+}

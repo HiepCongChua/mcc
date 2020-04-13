@@ -1,0 +1,14 @@
+{
+  "URL_INSIGHT": "https://insight.vinex.network",
+  "INSIGHT_KEY": "6Ldfo0sUArefAADzDVQMwKPdsdsRQtr4WPTKrSP6f",
+  "URL_DAEMON_FOUNDER": "http://daemon.coindex.fun",
+  "DAEMON_FOUNDER_KEY": "key-fa8fcfc823ecf0ab76ee65d869becab6",
+  "EMAIL_FROM": "Vinex System <system@vinex.network>",
+  "ADMIN_EMAIL": "snguyen@midasprotocol.io",
+  "SEND_TRANSACTION_TO_FOUNDER_DELAY": 600,
+  "SEND_WITHDRAW_TO_FOUNDER_DELAY": 60,
+  "DISCORD_WEBHOOK_BLOCKCHAIN": "https://discordapp.com/api/webhooks/522089324720947245/EsYbdVi_6GwGri15t0zO-LyHj8e1JooI26WQ0YbAjYG-veKGAiFHjtXtL9YH_rrjaxsX",
+  "DISCORD_WEBHOOK_WALLET_DEPOSIT": "https://discordapp.com/api/webhooks/522089453217644544/Li_CUdiEDkKqkqhgrrtirAqErik1AA5v5ZflyuvR9l0yKavUntkiXoTc15L3SGDa_iZ3",
+  "DISCORD_WEBHOOK_FOUNDER": "https://discordapp.com/api/webhooks/522128897446379550/80GDsXSQBJ8PeqeZPaHLad5mx0_SQhaVSl4MsyuuVAyDVf0xezldQ8SlHTfpoeSwajha",
+  "SECRET_KEY_JWT":"mcc-key"
+}

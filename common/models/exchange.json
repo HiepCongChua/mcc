@@ -1,0 +1,96 @@
+{
+    "name": "Exchange",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "exchange"
+        }
+    },
+    "http": {
+        "path": "exchange"
+    },
+    "properties": {
+        "userId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "user_id"
+            }
+        },
+        "source": {
+            "type": "string",
+            "mysql": {
+                "columnName": "source"
+            }
+        },
+        "target": {
+            "type": "string",
+            "mysql": {
+                "columnName": "target"
+            }
+        },
+        "rate": {
+            "type": "number",
+            "mysql": {
+                "columnName": "rate"
+            }
+        },
+        "status": {
+            "type": "number",
+            "mysql": {
+                "columnName": "status"
+            }
+        },
+        "amount": {
+            "type": "number",
+            "mysql": {
+                "columnName": "amount"
+            }
+        },
+        "fee": {
+            "type": "number",
+            "mysql": {
+                "columnName": "fee"
+            }
+        },
+        "exchangeId": {
+            "type": "number",
+            "mysql": {
+                "columnName": "exchange_id"
+            }
+        },
+        "txId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "tx_id"
+            }
+        },
+        "generalId": {
+            "type": "string",
+            "mysql": {
+                "columnName": "general_id"
+            }
+        },
+        "isAnnounced": {
+            "type": "number",
+            "default": 0,
+            "mysql": {
+                "columnName": "is_announced"
+            }
+        },
+        "createdAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "created_at"
+            }
+        },
+        "updatedAt": {
+            "type": "number",
+            "mysql": {
+                "columnName": "updated_at"
+            }
+        }
+    },
+    "indexes": {}
+}

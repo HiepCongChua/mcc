@@ -1,0 +1,26 @@
+{
+    "name": "WithdrawFee",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "mysql": {
+            "table": "withdraw_fee"
+        }
+    },
+    "http": {
+        "path": "withdraw-fee"
+    },
+    "properties": {
+        "coinSymbol": {
+            "type": "string",
+            "required": true,
+            "mysql": {
+                "columnName": "coin_symbol"
+            }
+        },
+        "fee": {
+            "type": "number"
+        }
+    }
+}
